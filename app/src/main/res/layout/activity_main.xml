@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#EBFFFA"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBFFFA"
+        android:backgroundTint="#EBFFFA"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/titulo_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/contrail_one"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#6EF3D6"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/operaciones_textView"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:text="@string/operaciones"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_textView" />
+
+        <TextView
+            android:id="@+id/resultado_textView"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:text="@string/resultado"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/operaciones_textView" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="348dp"
+            android:layout_height="448dp"
+            android:background="#6EF3D6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultado_textView"
+            app:layout_constraintVertical_bias="0.171">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="-172dp"
+                tools:layout_editor_absoluteY="292dp">
+
+                <Button
+                    android:id="@+id/siete_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/siete_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ocho_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/ocho_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/nueve_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/nueve_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/menos_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:text="@string/Resta" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/cuatro_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/cuatro_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cinco_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/cinco_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/seis_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/seis_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/div_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/dividir_btn"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/uno_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/uno_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dos_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/dos_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/tres_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/tres_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/mult_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/por_btn"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <Button
+                    android:id="@+id/cero_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/cero_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/punto_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#6EF3D6"
+                    android:text="@string/punto_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/igual_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/igual_btn"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/mas_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/mas_btn"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/del_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:background="#0DCEDA"
+                    android:backgroundTint="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/borrar_btn"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/atras_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:background="#0DCEDA"
+                    android:fontFamily="@font/contrail_one"
+                    android:text="@string/atras"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
